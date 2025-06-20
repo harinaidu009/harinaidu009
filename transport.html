@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SMOKEY TRANSPORTS</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #111;
+      color: #eee;
+    }
+
+    header {
+      background: linear-gradient(to right, #8B0000, #b71c1c);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header img {
+      height: 60px;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #ff4c4c;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .info-box, .features, .pricing, .contact, .booking {
+      background-color: #1c1c1c;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      padding: 20px;
+      box-shadow: 0 0 15px rgba(255, 0, 0, 0.2);
+    }
+
+    .features ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .features li::before {
+      content: '✓';
+      color: #e53935;
+      margin-right: 8px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #222;
+      color: white;
+    }
+
+    th, td {
+      padding: 15px;
+      border: 1px solid #555;
+      text-align: center;
+    }
+
+    th {
+      background-color: #b71c1c;
+      color: white;
+    }
+
+    tr:hover {
+      background-color: #2c2c2c;
+    }
+
+    .footer {
+      background-color: #000;
+      color: #aaa;
+      text-align: center;
+      padding: 12px;
+    }
+
+    .vehicle-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .vehicle-gallery figure {
+      margin: 0;
+      text-align: center;
+      color: #ccc;
+    }
+
+    .vehicle-gallery img {
+      width: 100%;
+      border-radius: 8px;
+      transition: transform 0.3s;
+      border: 2px solid #b71c1c;
+    }
+
+    .vehicle-gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    a {
+      color: #ff4c4c;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    input, select {
+      background-color: #111;
+      border: 1px solid #b71c1c;
+      color: white;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #b71c1c;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #d32f2f;
+    }
+
+    @media (max-width: 600px) {
+      header img {
+        height: 40px;
+      }
+
+      th, td {
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Truck_icon.svg/1200px-Truck_icon.svg.png" alt="Transport Logo" />
+  <h1>SwiftTrans Transport Services</h1>
+</header>
+
+<main class="container">
+
+  <section class="info-box">
+    <h2>Company Overview</h2>
+    <p><strong>Number of Vehicles:</strong> 120+</p>
+    <p><strong>Operating Cities:</strong> Mumbai, Delhi, Bangalore, Chennai, Hyderabad</p>
+    <p><strong>Delivery Speed:</strong> Same-day delivery in metro cities</p>
+    <p><strong>Experience:</strong> Over 15 years in logistics & freight</p>
+  </section>
+
+  <section class="features">
+    <h2>Our Key Features</h2>
+    <ul>
+      <li>Real-time GPS tracking</li>
+      <li>Zero cancellation charges</li>
+      <li>Automated billing & e-receipts</li>
+      <li>Warehousing & bulk storage solutions</li>
+      <li>Door-to-door pickup & delivery</li>
+    </ul>
+  </section>
+
+  <section class="pricing">
+    <h2>Pricing Chart (Per Kilometer)</h2>
+    <table>
+      <tr>
+        <th>Vehicle Type</th>
+        <th>Base Fare</th>
+        <th>Per Km Rate</th>
+      </tr>
+      <tr>
+        <td>Mini Truck</td>
+        <td>₹100</td>
+        <td>₹12/km</td>
+      </tr>
+      <tr>
+        <td>Pickup Van</td>
+        <td>₹150</td>
+        <td>₹15/km</td>
+      </tr>
+      <tr>
+        <td>Container Truck</td>
+        <td>₹250</td>
+        <td>₹20/km</td>
+      </tr>
+      <tr>
+        <td>Heavy Duty Trailer</td>
+        <td>₹400</td>
+        <td>₹30/km</td>
+      </tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>Our Fleet</h2>
+    <div class="vehicle-gallery">
+      <figure>
+        <img src="https://img.freepik.com/free-photo/white-delivery-van-driving-road_114579-4048.jpg" alt="Mini Truck" />
+        <figcaption>Mini Truck</figcaption>
+      </figure>
+      <figure>
+        <img src="https://img.freepik.com/free-photo/delivery-car-driving-road_114579-4046.jpg" alt="Pickup Van" />
+        <figcaption>Pickup Van</figcaption>
+      </figure>
+      <figure>
+        <img src="https://img.freepik.com/free-photo/3d-delivery-truck-with-boxes_23-2150737944.jpg" alt="Container Truck" />
+        <figcaption>Container Truck</figcaption>
+      </figure>
+      <figure>
+        <img src="https://img.freepik.com/free-photo/freight-truck-road-highway_1150-15173.jpg" alt="Trailer" />
+        <figcaption>Heavy Duty Trailer</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="booking">
+    <h2>Book a Transport Vehicle</h2>
+    <form id="bookingForm" onsubmit="return handleBooking(event)">
+      <label for="name">Full Name:</label><br />
+      <input type="text" id="name" name="name" required style="width: 100%; padding: 10px;"><br><br>
+
+      <label for="pickup">Pickup Location:</label><br />
+      <input type="text" id="pickup" name="pickup" required style="width: 100%; padding: 10px;"><br><br>
+
+      <label for="drop">Delivery Location:</label><br />
+      <input type="text" id="drop" name="drop" required style="width: 100%; padding: 10px;"><br><br>
+
+      <label for="date">Date of Transport:</label><br />
+      <input type="date" id="date" name="date" required style="width: 100%; padding: 10px;"><br><br>
+
+      <label for="vehicle">Select Vehicle Type:</label><br />
+      <select id="vehicle" name="vehicle" required style="width: 100%; padding: 10px;">
+        <option value="">--Select--</option>
+        <option value="Mini Truck">Mini Truck</option>
+        <option value="Pickup Van">Pickup Van</option>
+        <option value="Container Truck">Container Truck</option>
+        <option value="Heavy Duty Trailer">Heavy Duty Trailer</option>
+      </select><br><br>
+
+      <button type="submit">Submit Booking</button>
+    </form>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:support@swifttrans.in">support@swifttrans.in</a></p>
+    <p>Phone: +91 98765 43210</p>
+    <p>Office: 45 National Highway Road, Chennai, India</p>
+    <p>Service Hours: Mon-Sat | 8:00 AM - 8:00 PM</p>
+  </section>
+
+</main>
+
+<footer class="footer">
+  &copy; 2025 SwiftTrans Transport Pvt. Ltd. | All rights reserved.
+</footer>
+
+<script>
+  function handleBooking(event) {
+    event.preventDefault();
+    const name = document.getElementById('name').value;
+    const vehicle = document.getElementById('vehicle').value;
+    alert(`Thank you, ${name}! Your booking for a ${vehicle} has been received.`);
+    document.getElementById('bookingForm').reset();
+    return false;
+  }
+</script>
+
+</body>
+</html>

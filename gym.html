@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PowerFit Gym</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://images.unsplash.com/photo-1599058917212-d750089bc07c?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #00334d;
+      line-height: 1.6;
+      backdrop-filter: blur(2px);
+    }
+
+    header {
+      background: rgba(0, 191, 255, 0.85);
+      text-align: center;
+      padding: 40px 20px;
+      color: #fff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      font-size: 2.8em;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      font-size: 1.2em;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .section {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(12px);
+      border-radius: 15px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      margin-bottom: 25px;
+      padding: 25px;
+      box-shadow: 0 0 15px rgba(0, 191, 255, 0.3);
+    }
+
+    .section h2 {
+      color: #00bfff;
+      margin-bottom: 20px;
+      font-size: 1.6em;
+    }
+
+    .step {
+      margin-bottom: 15px;
+      padding-left: 15px;
+      border-left: 4px solid #00bfff;
+    }
+
+    .step h4 {
+      margin-bottom: 5px;
+      color: #005f87;
+    }
+
+    .schedule, .packages {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .card {
+      flex: 1 1 45%;
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      padding: 20px;
+      border-radius: 12px;
+      border-left: 6px solid #00bfff;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card h3 {
+      color: #0077b6;
+      margin-bottom: 10px;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 16px rgba(0,191,255,0.4);
+    }
+
+    footer {
+      background-color: rgba(204, 238, 255, 0.8);
+      text-align: center;
+      padding: 20px;
+      color: #004d66;
+      font-weight: bold;
+      font-size: 0.95em;
+      margin-top: 40px;
+      border-radius: 12px 12px 0 0;
+    }
+
+    form input, form select, form button {
+      backdrop-filter: blur(4px);
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    form input:focus, form select:focus {
+      outline: 2px solid #00bfff;
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        flex: 1 1 100%;
+      }
+
+      header h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>PowerFit Gym & Fitness</h1>
+  <p>Train Hard, Stay Strong 💪</p>
+</header>
+
+<div class="container">
+
+  <!-- Workout Section -->
+  <section class="section">
+    <h2>🏋️‍♂️ Step-by-Step Workout Techniques</h2>
+    <div class="step"><h4>Step 1: Stretching</h4><p>Start with 5–10 minutes of full-body stretching.</p></div>
+    <div class="step"><h4>Step 2: Warm-Up</h4><p>Do 10 minutes of light cardio (jog or cycling).</p></div>
+    <div class="step"><h4>Step 3: Strength Training</h4><p>3 sets of weightlifting (chest, arms, back, legs split by day).</p></div>
+    <div class="step"><h4>Step 4: Core Work</h4><p>Include planks, crunches, leg raises (15 mins total).</p></div>
+    <div class="step"><h4>Step 5: Cool Down</h4><p>End with 5 minutes of slow walking and stretching again.</p></div>
+  </section>
+
+  <!-- Gym Timings -->
+  <section class="section">
+    <h2>🕒 Gym Timings</h2>
+    <div class="schedule">
+      <div class="card">
+        <h3>Morning Session</h3>
+        <p>⏰ 6:00 AM - 10:00 AM</p>
+        <p>🧘‍♀️ Yoga & Functional Training</p>
+      </div>
+      <div class="card">
+        <h3>Evening Session</h3>
+        <p>⏰ 5:00 PM - 9:00 PM</p>
+        <p>🏋️ Weight & Cardio Training</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Membership Packages -->
+  <section class="section">
+    <h2>📦 Gym Membership Packages</h2>
+    <div class="packages">
+      <div class="card">
+        <h3>Normal Package</h3>
+        <p>💰 ₹1500/month</p>
+        <p>👥 Total Members: 85</p>
+        <p>Includes: Gym access + Cardio Zone</p>
+      </div>
+      <div class="card">
+        <h3>Special Package</h3>
+        <p>💰 ₹3000/month</p>
+        <p>👥 Total Members: 45</p>
+        <p>Includes: Gym + Trainer + Diet Plan + Zumba</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Section -->
+  <section class="section">
+    <h2>💻 Book Your Personal Trainer</h2>
+    <p>Schedule one-on-one sessions with our certified fitness trainers.</p>
+    <form style="margin-top: 20px;">
+      <label for="name">👤 Name:</label><br>
+      <input type="text" id="name" name="name" required style="width:100%; padding:10px; margin-bottom:10px;"><br>
+
+      <label for="email">📧 Email:</label><br>
+      <input type="email" id="email" name="email" required style="width:100%; padding:10px; margin-bottom:10px;"><br>
+
+      <label for="session">📅 Session Date:</label><br>
+      <input type="date" id="session" name="session" required style="width:100%; padding:10px; margin-bottom:10px;"><br>
+
+      <label for="trainerTime">🕓 Preferred Time:</label><br>
+      <select id="trainerTime" name="trainerTime" style="width:100%; padding:10px; margin-bottom:20px;">
+        <option value="6am">6:00 AM – 7:00 AM</option>
+        <option value="7am">7:00 AM – 8:00 AM</option>
+        <option value="5pm">5:00 PM – 6:00 PM</option>
+        <option value="6pm">6:00 PM – 7:00 PM</option>
+      </select><br>
+
+      <button type="submit" style="padding: 10px 20px; background-color: #00bfff; color: white; border: none;">Book Now</button>
+    </form>
+  </section>
+
+  <!-- Supplements Store -->
+  <section class="section">
+    <h2>🏪 Supplements Store</h2>
+    <p>Buy top-quality supplements at PowerFit Store next to the gym!</p>
+    <p style="margin-bottom: 20px; font-weight: bold;">🔥 Trusted by over <span style="color:#00bfff;">2,000+ buyers</span> with excellent ratings!</p>
+    <div class="packages">
+      <div class="card">
+        <h3>💪 Protein Powders</h3>
+        <img src="https://m.media-amazon.com/images/I/71RjYZkI4OL._AC_SL1500_.jpg" alt="Protein Powder" style="width:100%; border-radius:8px; margin:10px 0;">
+        <p><strong>Brands:</strong> ON Gold Standard, MuscleBlaze, Dymatize</p>
+        <p>⭐ 4.7/5 (1,200+ buyers)</p>
+      </div>
+      <div class="card">
+        <h3>⚡ Pre-Workouts</h3>
+        <img src="https://m.media-amazon.com/images/I/61fYqD9V0QL._SL1200_.jpg" alt="Pre-Workout" style="width:100%; border-radius:8px; margin:10px 0;">
+        <p><strong>Brands:</strong> C4 Original, MuscleTech Vapor, N.O.-Xplode</p>
+        <p>⭐ 4.5/5 (850+ buyers)</p>
+      </div>
+      <div class="card">
+        <h3>🧠 Creatine</h3>
+        <img src="https://m.media-amazon.com/images/I/61NvQJu1bxL._SL1500_.jpg" alt="Creatine" style="width:100%; border-radius:8px; margin:10px 0;">
+        <p><strong>Brands:</strong> ON Micronized, MuscleBlaze Monohydrate, CellTech</p>
+        <p>⭐ 4.6/5 (1,000+ buyers)</p>
+      </div>
+      <div class="card">
+        <h3>🐟 Fish Oil</h3>
+        <img src="https://m.media-amazon.com/images/I/81A-sT+gbGL._SL1500_.jpg" alt="Fish Oil" style="width:100%; border-radius:8px; margin:10px 0;">
+        <p><strong>Brands:</strong> Now Omega-3, Nordic Naturals, MB Fish Oil</p>
+        <p>⭐ 4.8/5 (900+ buyers)</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  &copy; 2025 PowerFit Gym | Built with 💻 by [Your Name]
+</footer>
+
+</body>
+</html>
